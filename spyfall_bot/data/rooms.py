@@ -11,6 +11,6 @@ class Room(SqlAlchemyBase):
     name = sqlalchemy.Column(sqlalchemy.String,
                              nullable=False, unique=True)
     started_at = sqlalchemy.Column(sqlalchemy.DateTime,
-                                   nullable=False)
+                                   nullable=True)
     time = sqlalchemy.Column(sqlalchemy.Time, nullable=False)
     max_users = sqlalchemy.Column(sqlalchemy.Integer, nullable=False)
